@@ -1,6 +1,38 @@
+# NEXTJS-INTRO
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Home Page
+
+![HomePage](./docs/HomePage.png)
+
+## User List Page
+
+![HomePage](./docs/UserListPage.png)
+
+## Stack
+
+* [Next 13.0.0](https://nextjs.org/)
+  * Routing
+  * Layout
+  * CSS modules
+  * Image component
+  * Head component for html metadata
+  * Data Fetching
+    * [getStaticProps](https://nextjs.org/docs/basic-features/data-fetching/get-static-props) - Next.js will pre-render this page at build time using the props returned by getStaticProps
+    * [getStaticPaths](https://nextjs.org/docs/basic-features/data-fetching/get-static-paths) - Dynamic Routes and uses getStaticProps, Next.js will statically pre-render all the paths specified by getStaticPaths.
+* [React 18.2.0](https://reactjs.org/)
+  * Hooks
+    * UseEffect
+    * UseRouter
+
 ## Getting Started
+
+Creating a next js project
+
+```bash
+npx create-next-app nextjs-intro
+```
 
 First, run the development server:
 
@@ -32,3 +64,8 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+## References
+
+* [nextjs-tutorial](https://github.com/iamshaunjp/nextjs-tutorial)
