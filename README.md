@@ -19,8 +19,16 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
   * Image component
   * Head component for html metadata
   * Data Fetching
-    * [getStaticProps](https://nextjs.org/docs/basic-features/data-fetching/get-static-props) - Next.js will pre-render this page at build time using the props returned by getStaticProps
-    * [getStaticPaths](https://nextjs.org/docs/basic-features/data-fetching/get-static-paths) - Dynamic Routes and uses getStaticProps, Next.js will statically pre-render all the paths specified by getStaticPaths.
+    * [getStaticProps](https://nextjs.org/docs/basic-features/data-fetching/get-static-props) - <sub><sup>[[code]](./pages/users/index.js)</sub></sup>
+      - (Static Site Generation) from a page.
+      - Next.js will pre-render this page at build time using the props returned.
+      - [Incremental Static Regeneration](https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration)
+    * [getServerSideProps](https://nextjs.org/docs/basic-features/data-fetching/get-server-side-props) - <sub><sup>[[code]](./pages/users/index.js)</sub></sup>
+      - (Server-Side Rendering) from a page.
+      - Next.js will pre-render this page on each request using the data returned.
+    * [getStaticPaths](https://nextjs.org/docs/basic-features/data-fetching/get-static-paths) - <sub><sup>[[code]](./pages/users/[id].js)</sub></sup>
+      - (Static Site Generation) from a page.
+      - Dynamic Routes and uses getStaticProps, Next.js will statically pre-render all the paths specified.
 * [React 18.2.0](https://reactjs.org/)
   * Hooks
     * UseEffect
